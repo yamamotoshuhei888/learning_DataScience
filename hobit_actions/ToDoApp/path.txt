@@ -1,0 +1,1 @@
+export PATH="$PATH:/Users/yamamotoshuuhei/Downloads/Flutter_dev/SDK/1.22.5/bin"
