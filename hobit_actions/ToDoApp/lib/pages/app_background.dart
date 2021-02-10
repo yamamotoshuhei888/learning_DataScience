@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-calss AppBackgroundPage extends StatelessWidget{
+class AppBackgroundPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-    return LayoutBuilder(buider: (context, constraint){
+  Widget build(BuildContext context) {
+    return LayoutBuilder(builder: (context, constraint) {
       final height = constraint.maxHeight;
       final width = constraint.maxWidth;
       return Stack(
@@ -18,12 +18,11 @@ calss AppBackgroundPage extends StatelessWidget{
               height: height,
               width: width,
               decoration: BoxDecoration(
-                shape: BoxShape.circle, color: Color.white.withOpacity(0.5)
-              ),
+                shape: BoxShape.circle, color: Colors.white.withOpacity(0.5)),
             ),
           ),
           Positioned(
-            top: height * 0.60,
+            top:   height * 0.60,
             right: height * 0.09,
             child: Container(
               height: height,
@@ -33,7 +32,7 @@ calss AppBackgroundPage extends StatelessWidget{
             ),
           ),
           Positioned(
-            top: -height * 0.20,
+            top:  -height * 0.20,
             left: -height * 0.39,
             child: Container(
               height: height,
@@ -45,3 +44,5 @@ calss AppBackgroundPage extends StatelessWidget{
         ],
       );
     });
+  }
+}
